@@ -1,0 +1,787 @@
+body{
+  margin: 0;
+font-family: tahoma;
+}
+
+html{
+  margin: 0;
+  height: 0;
+}
+
+.tlo{
+  width: 100%;
+  background-image: url("tlo.jpg");
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -370px;
+
+}
+
+td{
+  padding: 10px 10px;
+
+}
+
+  li{
+    display: block;
+    float: left;
+    margin: 10px 0;
+
+
+  }
+
+ul{
+  font-family: arial;
+  letter-spacing: 2px;
+  list-style: none;
+
+
+
+
+
+}
+
+ul li a.strglowna:hover{
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, black 20%, blue 100%);
+  border-radius: 180px;
+  font-weight: 500;
+}
+
+ul li a:hover{
+  text-decoration: none;
+  font-weight: bolder;
+
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 12px 20px;
+}
+
+
+ul li a.strglowna{
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 180px;
+  font-weight: 500;
+}
+
+.lista1{
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+.lista2{
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+
+.lista1 ul{
+  text-align: center;
+  margin-left: 20%;
+  padding: 12px 0px;
+}
+
+.lista1 ul li{
+margin: -10px -10px;
+
+}
+
+
+.lista1 ul li i{
+  margin-top: 0px;
+  margin-left: -10px;
+}
+
+.lista2 ul{
+  text-align: center;
+  margin-right: 20%;
+  padding: 12px 25px;
+}
+
+.teksttlo{
+position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: -550px;
+
+}
+
+
+
+
+
+
+
+.opis1 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+  position: absolute;
+
+  top:880px;
+
+  z-index: 1;
+
+}
+
+hr{
+  background-image: linear-gradient(to right, black 20%, white 100%);
+  height: 10px;
+
+
+  border: 0;
+}
+
+.hr1{
+  width: 60%;
+  margin-left: 0;
+}
+
+.opis2{
+  width: 40%;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  top: 410px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  margin: 50px auto;
+}
+
+.clear{
+  clear: both;
+  width: 100%;
+  height: 1px;
+  position: relative;
+  margin-top: 100px;
+  top: 100px;
+}
+
+.zdjecia1{
+  height: 375px;
+  width: 50%;
+  position: relative;
+  top: 500px;
+  float: left;
+  font-family: 'Lora', serif;
+}
+
+hr.hr2 {
+  background-image: linear-gradient(to left, black 20%, white 100%);
+  height: 10px;
+
+  border: 0;
+}
+
+.opis3{
+  height: 500px;
+  width: 50%;
+  position: relative;
+  top: 500px;
+  float: left;
+  font-family: 'Lora', serif;
+  margin-top: 3%;
+}
+
+.opis3 h1{
+  margin-left:25%;
+}
+
+.opis3 p{
+  text-align: center;
+  width: 50%;
+  margin-left: 6.5%;
+
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.opis3a {
+  text-decoration: none;
+  width: 15%;
+  margin-left: 22%;
+
+  text-align: center;
+  color: black;
+  border: solid 1px black;
+  border-radius: 180px;
+  padding: 12px 20px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  position: absolute;
+  font-family: tahoma;
+
+}
+
+.opis3a:hover {
+  text-decoration: none;
+  width: 15%;
+  margin-left: 22%;
+
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, black 20%, blue 100%);
+
+  border-radius: 180px;
+  padding: 12px 20px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  position: absolute;
+  font-family: tahoma;
+
+}
+
+.zdjecia11{
+  background-color: black;
+  width: 600px;
+  margin: auto;
+
+}
+
+.img1{
+background-color: blue;
+width: 290px;
+height: 155px;
+float: left;
+background-image: url("1.jpg");
+background-size: contain;
+}
+
+.img2{
+
+  background-color: red;
+  width: 290px;
+  height: 205px;
+  float: left;
+  margin-left: 15px;
+  background-image: url("2.jpg");
+background-size: contain;
+}
+
+.img3{
+  background-color: yellow;
+  width: 290px;
+  height: 205px;
+  float: left;
+  margin-top: -35px;
+  background-image: url("3.jpg");
+  background-size: contain;
+}
+
+.img4{
+  background-color: green;
+  width: 290px;
+  height: 155px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url("4.jpg");
+  background-size: contain;
+}
+
+.wycena{
+  width: 100%;
+  height: 700px;
+  background-image: url("wycena.png");
+  margin-top: 500px;
+  background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.wycena1{
+  width: 50%;
+  margin-right: 0;
+  height: 700px;
+
+  float: right;
+}
+
+.wycena1 a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-family: tahoma;
+  font-weight: 500;
+  border-radius: 180px;
+  padding: 15px 25px;
+  letter-spacing: 0px;
+  font-size: 20px;
+  width: 10%;
+  margin-left: 20%;
+  margin-top: 300px;
+  position: absolute;
+
+  text-align: center;
+}
+
+.firmy{
+  width: 1200px;
+  margin: auto;
+  height: 595px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+.fa{
+  width: 275px;
+  height: 275px;
+
+  margin: 10px 10px;
+}
+
+.f1{
+  background-image: url(f1.png);
+  background-size: contain;
+}
+.f2{
+  background-image: url(f2.png);
+  background-size: contain;
+}
+.f3{
+  background-image: url(f3.png);
+  background-size: contain;
+}
+.f4{
+  background-image: url(f4.png);
+  background-size: contain;
+}
+.f5{
+  background-image: url(f5.png);
+  background-size: contain;
+}
+.f6{
+  background-image: url(f6.png);
+  background-size: contain;
+}
+.f7{
+  background-image: url(f7.png);
+  background-size: contain;
+}
+.f8{
+  background-image: url(f8.png);
+  background-size: contain;
+}
+.f3{
+  background-image: url(f3.png);
+  background-size: contain;
+}
+
+.lata{
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  z-index: 1;
+  position: relative;
+}
+
+.tlolata{
+  width: 100%;
+  position: absolute;
+  height: 400px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 191, 0.84) 10%, rgba(0, 0, 191, 0) 100%);
+  margin-top: -400px;
+  z-index: 2;
+
+}
+
+.tlolata h1{
+  text-align: center;
+  margin: auto;
+  margin-top: 130px;
+  color: white;
+  font-size: 70px;
+font-family: 'Roboto', sans-serif;
+}
+
+.tlolata a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-family: tahoma;
+  font-weight: 500;
+  border-radius: 180px;
+  padding: 15px 25px;
+  letter-spacing: 0px;
+  font-size: 20px;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 40px;
+position: absolute;
+
+
+  text-align: center;
+}
+
+.tlolata a:hover{
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to right, black 30%, blue 100%);
+  font-family: tahoma;
+  font-weight: 500;
+  border-radius: 180px;
+  padding: 15px 25px;
+  letter-spacing: 0px;
+  font-size: 20px;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: 40px;
+position: absolute;
+
+
+  text-align: center;
+}
+
+.lata1{
+  width: 50%;
+  height: 400px;
+
+  float: left;
+  background-image: url(lata1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: relative;
+
+}
+.lata2{
+  width: 50%;
+  height: 400px;
+
+  float: left;
+  background-image: url(lata2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  position: relative;
+}
+.clearlata{
+  width: 100%;
+  clear: both;
+
+
+}
+
+.realizacje{
+  width: 100%;
+
+  margin-top: 150px
+}
+
+.realizacje h1{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+.realizacje .hr1{
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+.realizacje .hr2{
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+.r1{
+  width: 1230px;
+  height: 1100px;
+
+  margin-top: 60px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rr{
+  width: 200px;
+  height: 200px;
+
+  float: left;
+  margin: 10px;
+  position: relative;
+}
+
+.r2{
+  width: 390px;
+  height: 240px;
+  background-image: url(r2.jpg);
+  background-size: cover;
+}
+.r3{
+  width: 390px;
+  height: 240px;
+  background-image: url(r3.jpg);
+
+  background-size: cover;
+}
+.r4{
+  width: 390px;
+  height: 220px;
+  background-image: url(r4.jpg);
+background-size: cover;
+
+}
+.r5{
+  width: 390px;
+  height: 290px;
+  clear: both;
+  background-image: url(r5.jpg);
+  background-size: cover;
+}
+.r6{
+  width: 390px;
+  height: 260px;
+  background-image: url(r6.jpg);
+  background-size: cover;
+}
+.r7{
+  width: 390px;
+  height: 260px;
+  margin-top: -10px;
+  background-image: url(r7.jpg);
+background-size: cover;
+}
+.r8{
+  width: 390px;
+  height: 210px;
+  clear: both;
+  background-image: url(r8.jpg);
+  background-size: cover;
+}
+.r9{
+  width: 390px;
+  height: 290px;
+  margin-top: -20px;
+  background-image: url(r9.jpg);
+  background-size: cover;
+}
+.r10{
+  width: 390px;
+  height: 220px;
+  margin-top: -40px;
+  background-image: url(r10.jpg);
+  background-size: cover;
+
+}
+.r11{
+  width: 390px;
+  height: 265px;
+  clear: both;
+  margin-top: -40px;
+  background-image: url(r11.jpg);
+  background-size: cover;
+}
+.r12{
+  width: 390px;
+  height: 215px;
+  background-image: url(r12.jpg);
+  background-size: cover;
+
+}
+.r13{
+  width: 390px;
+  height: 305px;
+  margin-top: -80px;
+  background-image: url(r13.jpg);
+background-size: cover;
+
+
+
+}
+.r14{
+  width: 100%;
+  height: 50px;
+  clear: both;
+
+}
+
+.a14{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 12px 30px;
+  border-radius: 180px;
+  position: absolute;
+  margin-left: 42.5%;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  ma
+}
+
+.stopka{
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, blue 1%, black 25%);
+  position: relative;
+  margin-top: 100px;
+}
+
+.stopka1{
+  width: 1210px;
+  height: 100px;
+  margin: auto;
+  color: WHITE;
+}
+
+.stopka1 img{
+  display: block;
+  margin: auto;
+  color: WHITE;
+  position: absolute;
+  margin-left: 28%;
+
+
+margin-top: 1.5%;
+}
+
+.stopka1 p.p1{
+  display: block;
+  margin: auto;
+  color: WHITE;
+  position: absolute;
+  margin-left: 0%;
+  font-size: 20px;
+  font-weight: 500;
+margin-top: 2%;
+}
+
+.stopka1 p.p2{
+  display: block;
+  width: 10%;
+  margin: auto;
+  color: WHITE;
+  position: absolute;
+  margin-left: 30%;
+
+  margin-top: 1.5%;
+
+}
+
+.stopka1 a{
+  display: block;
+  margin: auto;
+  color: WHITE;
+  position: relative;
+  margin-right: 0;
+  float: right;
+  text-decoration: none;
+  margin-top: 2.1%;
+  background-color: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 180px;
+  width: 10%;
+  text-align: center;
+  
+}
+
+.teksttlo h1{
+  font-size: 80px;
+  font-weight: normal;
+  margin-top: -35px;
+  color: black;
+}
+
+.teksttlo h2{
+  font-size: 34px;
+  font-weight: normal;
+
+}
+
+a.sproferte{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  padding: 12px 25px;
+  border-radius: 180px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+}
+
+a.sproferte:hover{
+  color: white;
+  background-image: linear-gradient(to right, black 30%, blue 100%);
+}
+
+.menu{
+  position: absolute;
+  z-index: 2;
+
+  width: 100%;
+}
+
+.image-wrap {
+  width: 100%;
+  height: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.image-wrap img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  animation: move 50s ease;
+
+  /* Add infinite to loop. */
+
+  -ms-animation: move 1100s ease;
+  -webkit-animation: move 40s ease;
+  -0-animation: move 40s ease;
+  -moz-animation: move 40s ease;
+
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left right;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    /* Firefox */
+  }
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    /* Firefox */
+  }
+}
