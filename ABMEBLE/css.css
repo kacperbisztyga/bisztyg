@@ -1,0 +1,732 @@
+body{
+  margin: 0px;
+  font-family: "open sans";
+  overflow-x: hidden;
+}
+
+.header {
+
+width: 1200px;
+  position: fixed;
+  z-index: 10;
+
+}
+
+.container{
+  width: 1200px;
+
+clear: both;
+
+  margin: auto;
+  z-index: -2;
+}
+.container1{
+  width: 100%;
+  clear: both;
+  z-index: -2;
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  margin: 0;
+  z-index: 2;
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+
+  float: right;
+  margin: 35px;
+font-family: "poppins";
+  font-size: 17px;
+  letter-spacing: 0px;
+  z-index: 10;
+  color: black;
+
+}
+li:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+
+
+
+}
+.clear{
+  clear: both;
+  width: 100%;
+}
+
+.logo{
+  text-align: center;
+  float: left;
+  margin: 16px;
+}
+.logo p{
+  margin: -1px;
+}
+
+.p1{
+  font-size: 28px;
+}
+.fb i{
+  font-size: 50px;
+  float: left;
+margin: 20px 20px 20px 0px;
+color: #363636;
+}
+.fb i:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+.fb{
+  margin: 0px 40px 0px 40px;
+}
+.hr1{
+    background-image: linear-gradient(to right, darkblue 20%, white 100%);
+    height: 10px;
+    margin-left: 0px;
+    width: 60%;
+    text-align: left;
+    position:absolute;
+    border: 0;
+    left: 0;
+    margin-top: -30px;
+}
+.tresc p{
+  font-size: 40px;
+  text-align: center;
+  font-family: "poppins";
+}
+.ofirmie p{
+  font-size:20px;
+  text-align: center;
+  font-family: "poppins";
+
+
+}
+.ofirmie{
+  text-align: right;
+  right: 0;
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  font-family: "poppins";
+
+}
+.logo .p2{
+  margin-top: -14px;
+  font-family: "poppins";
+}
+.logo .p1{
+  margin-top: 1px;
+  font-family: "poppins";
+}
+.img{
+  width: 100%;
+  height: 900px;
+  background-image: url(tlo.jpg);
+  background-size: cover;
+}
+.srodek{
+  text-align: center;
+  margin-top: 300px;
+  position: absolute;
+  width: 1200px;
+
+}
+.srodek p{
+  font-size: 40px;
+  font-weight: ;
+  margin: 0;
+  margin-bottom: -20px;
+font-family: "poppins";
+
+}
+.srodek h1{
+  font-size: 90px;
+  margin: 0;
+  margin-bottom: -20px;
+
+
+}
+.srodek h2{
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: -30px;
+
+}
+.srodek a{
+  font-size: 20px;
+font-family: "poppins";
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 30px;
+}
+.srodek a:hover{
+  color: white;
+  background-image: linear-gradient(to right, black 20%, blue 100%);
+  transition: 1s;
+  font-weight: bold;
+}
+.sticky{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: sticky; top: 0px;
+  z-index: 9;
+
+}
+.hr2{
+    background-image: linear-gradient(to left, blue 20%, white 100%);
+    height: 10px;
+    margin-right: 0px;
+    width: 42%;
+    text-align: right;
+    position:absolute;
+    border: 0;
+    right: 0;
+    margin-top: 0px;
+  }
+.tresc{
+  z-index: -2;
+  background-color: white;
+  font-family: "poppins";
+}
+.zdj1:hover,.zdj2:hover,.zdj3:hover,.zdj4:hover{
+  transform: scale(1.5);
+  transition: 2s;
+}
+.zdjecia1 .zdj1{
+  background-image: url(1.jpg);
+  width: 300px;
+  height: 180px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: -20px;
+  background-size: cover;
+}
+.zdjecia1 .zdj2{
+  background-image: url(2.jpg);
+  width: 300px;
+  height: 220px;
+  float: left;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+.zdjecia1 .zdj3{
+  background-image: url(3.jpg);
+  width: 300px;
+  height: 220px;
+  float: left;
+  margin-top: -40px;
+background-size: cover;
+  margin-right: 20px;
+}
+.zdjecia1 .zdj4{
+  background-image: url(4.jpg);
+  width: 300px;
+  height: 180px;
+  float: left;
+  background-size: cover;
+}
+.zdjecia1{
+  width: 640px;
+  height: 420px;
+
+  margin-top: 100px;
+  margin-right: 0;
+}
+.oferta{
+
+  width: 550px;
+  height: 400px;
+  float: right;
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 0px;
+  font-family: "poppins";
+}
+.oferta1{
+  float: left;
+}
+.oferta p{
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  margin-top: 80px;
+  margin: 50px auto;
+  padding: 0px;
+}
+.oferta h1{
+  margin: 20px;
+  margin-top: 100px;
+  font-weight: normal;
+
+}
+.sprawdz{
+  font-size: 20px;
+font-family: "poppins";
+  padding: 10px 40px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid black;
+
+}
+.sprawdz:hover{
+  color: white;
+  background-image: linear-gradient(to right, black 20%, blue 100%);
+  transition: 1s;
+  border: 0px;
+  font-family: "poppins";
+}
+.clear2{
+
+  clear: both;
+  width: 100%;
+
+}
+.wycena{
+  width: 100% ;
+
+  height: 650px;
+  background-image: url(wycena.png);
+  left: 0;
+  margin-left: -0;
+  margin-top: 100px;
+  background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+clear: both;
+
+
+}
+.wycena a{
+  font-size: 27px;
+  font-weight: bold;
+  padding: 10px 40px;
+  background-color: white;
+  border-radius: 30px;
+  right: 20%;
+  margin: auto;
+position: absolute;
+margin-top: 330px;
+font-family: "poppins";
+}
+.wycena a:hover{
+  color: white;
+  background-image: linear-gradient(to right, black 20%, blue 100%);
+  transition: 1s;
+}
+.loga{
+  width: 1200px;
+  z-index: -5;
+  clear: both;
+}
+.log{
+  width: 275px;
+  height: 275px;
+  margin: auto;
+  float: left;
+  margin: 16.5px;
+  z-index: -5;
+
+}
+.log1, .log5{
+  margin-left: 0px;
+}
+.log4, .log8{
+  margin-right: 0px;
+}
+.log1, .log2,.log3,.log4{
+  margin-bottom: 2.5%;
+}
+.log1{
+  background-image: url(f1.png);
+  background-size: cover;
+  z-index: -2;
+}
+.log2{
+  background-image: url(f2.png);
+  background-size: cover;
+}
+.log3{
+  background-image: url(f3.png);
+  background-size: cover;
+}
+.log4{
+  background-image: url(f4.png);
+  background-size: cover;
+}
+.log5{
+  background-image: url(f5.png);
+  background-size: cover;
+}
+.log6{
+  background-image: url(f7.png);
+  background-size: cover;
+}
+.log7{
+  background-image: url(f8.png);
+  background-size: cover;
+}
+.log8{
+  background-image: url(f9.png);
+  background-size: cover;
+}
+.clear3{
+  width: 100%;
+
+  clear: both;
+  margin-top: 20px;
+  position: relative;
+  top:900px;
+  clear: both;
+}
+.wycena .clear3{
+  margin-top: -200px;
+  background-color: none;
+  height: 0px;
+}
+
+
+.dos1{
+  height: 400px;
+  width: 50%;
+  background-image: url(lata1.jpg);
+  float: left;
+  background-size: cover;
+    z-index: 0;
+
+}
+.dos2{
+  height: 400px;
+  width: 50%;
+  background-image: url(lata2.jpg);
+  float: left;
+  background-size: cover;
+
+
+}
+.tlo{
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 191, 0.84) 10%, rgba(0, 0, 191, 0) 100%);
+  left:0;
+  position: absolute;
+
+
+
+}
+.tlo p{
+  font-size: 75px;
+  color: WHITE;
+  text-align: center;
+  font-weight: bold;
+font-family: "poppins";
+  margin-top: 150px;
+
+}
+
+.realizacje h1{
+  text-align: center;
+  margin-top: 100px;
+  font-family: "poppins";
+}
+.hr3{
+    background-image: linear-gradient(to left, blue 20%, white 100%);
+    height: 10px;
+    margin-right: 0px;
+    width: 50%;
+    text-align: right;
+    position:absolute;
+    border: 0;
+    right: 0;
+    margin-top: 0px;
+  }
+  .hr4{
+      background-image: linear-gradient(to right, blue 20%, white 100%);
+      height: 10px;
+      margin-left: 0px;
+      width: 50%;
+      text-align: right;
+      position:absolute;
+      border: 0;
+      left: 0;
+      margin-top: 0px;
+    }
+.realizacjezdj{
+  height: 1000px;
+  margin-top: 100px;
+  z-index: -10;
+}
+.sticky{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: sticky; top: 0px;
+  z-index: 9;
+}
+
+.rel1,.rel2,.rel3,.rel4,.rel5,.rel6,.rel7,.rel8,.rel9,.rel10,.rel11,.rel12,.rel13{
+  width: 380px;
+  height: 250px;
+  background-color: black;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  z-index: -10;
+}
+.rel1{
+  background-image: url(r2.jpg);
+  background-size: cover;
+  z-index: -10;
+}
+.rel2{
+  background-image: url(r3.jpg);
+  background-size: cover;
+  z-index: -10;
+}
+.rel3{
+  height: 220px;
+  background-image: url(r4.jpg);
+  background-size: cover;
+}
+.rel4{
+  clear: both;
+  height: 270px;
+  background-image: url(r5.jpg);
+  background-size: cover;
+}
+.rel5{
+  background-image: url(r6.jpg);
+  background-size: cover;
+}
+.rel6{
+  margin-top: -20px;
+  background-image: url(r7.jpg);
+  background-size: cover;
+}
+.rel7{
+  clear: both;
+  height: 200px;
+  background-image: url(r8.jpg);
+  background-size: cover;
+}
+.rel8{
+  margin-top: -10px;
+  height: 270px;
+  background-image: url(r9.jpg);
+  background-size: cover;
+}
+.rel9{
+  height: 220px;
+  margin-top: -40px;
+  background-image: url(r10.jpg);
+  background-size: cover;
+}
+.rel10{
+  clear: both;
+  margin-top: -40px;
+  background-image: url(r11.jpg);
+  background-size: cover;
+}
+.rel11{
+  height: 200px;
+  background-image: url(r12.jpg);
+  background-size: cover;
+}
+.rel12{
+  margin-top: -70px;
+  height: 280px;
+  background-image: url(r13.jpg);
+  background-size: cover;
+}
+.rel13{
+  height: 0px;
+  clear: both;
+}
+.rel1:hover,.rel2:hover,.rel3:hover,.rel4:hover,.rel5:hover,.rel6:hover,.rel7:hover,.rel8:hover,.rel9:hover,.rel10:hover,.rel11:hover,.rel12:hover{
+  transform: scale(1.3);
+  transition: 1s;
+}
+.reala{
+  text-align: center;
+  margin-top: 40px;
+}
+.reala a{
+font-size: 20px;
+padding: 15px 40px;
+color: white;
+background-color: black;
+border-radius: 50px;
+
+font-family: "poppins";
+}
+.reala a:hover{
+
+background-image: linear-gradient(to bottom, black 20%, blue 100%);
+transition: 5s;
+
+}
+.footer{
+  height: 200px;
+  background-color: black;
+  margin-top: 50px;
+  font-family: "poppins";
+}
+.s1{
+  height: 150px;
+  width: 25%;
+
+  float: left;
+  padding-top: 50px;
+  color: white;
+}
+.s1 .p2{
+  margin-top: -10px;
+}
+.s2{
+  height: 150px;
+  width: 25%;
+
+  float: left;
+  padding-top: 50px;
+  color: white;
+}
+.s3{
+  height: 170px;
+  width: 25%;
+
+  float: left;
+  padding-top: 30px;
+  color: white;
+}
+.s4{
+  height: 150px;
+  width: 25%;
+
+  float: left;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+}
+.s2 p{
+  text-align: left;
+  font-size: 17px;
+
+}
+ .s2 .location{
+  margin-top: 20px;
+}
+.s2 .p2{
+  margin-top: -20px;
+}
+.s3 .p1{
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+}
+.s3 a{
+  color: white;
+}
+
+.s3{
+  text-align: center;
+}
+.s4a{
+  margin: 20px 20px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+
+}
+.s4a:hover{
+  margin: 20px 20px;
+  color: black;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: white;
+  transition: 1s;
+
+}
+.s4 p{
+  margin: 0px;
+}
+.s4p{
+  padding-top: 20px;
+}
+.s1 i{
+  color: white;
+}
+.s2 i{
+  color: white;
+}
+.tlostopka{
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to top, rgba(0, 0, 191, 0.84) 10%, rgba(0, 0, 191, 0) 100%);
+
+}
+.img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+
+  animation: move 50s ease;
+
+  /* Add infinite to loop. */
+
+  -ms-animation: move 1100s ease;
+  -webkit-animation: move 40s ease;
+  -0-animation: move 40s ease;
+  -moz-animation: move 40s ease;
+
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left right;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    /* Firefox */
+  }
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    /* Firefox */
+  }
+}
