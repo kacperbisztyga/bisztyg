@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planowanie Walentynek</title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<h1>Planujemy nasze Walentynki</h1>
+<form action="wyslij_plan.php" method="POST">
+    <label for="restauracja">Wybierz restaurację:</label>
+    <select name="restauracja" id="restauracja">
+        <option value="Restauracja A">Restauracja A</option>
+        <option value="Restauracja B">Restauracja B</option>
+        <option value="Restauracja C">Restauracja C</option>
+    </select>
+    <br>
+    <label for="uwagi">Dodatkowe uwagi:</label>
+    <textarea name="uwagi" id="uwagi" rows="4"></textarea>
+    <br>
+    <input type="submit" value="Wyślij plan">
+</form>
+
+</body>
+</html>
