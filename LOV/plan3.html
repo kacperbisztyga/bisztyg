@@ -1,0 +1,62 @@
+<!-- Plik: nastepnaStrona.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inne pytanie</title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+  <h1>Co chciałbyś porobić?</h1>
+  <form id="miejscaForm">
+    <div>
+      <input type="checkbox" id="A1" name="miejsca" value="A1"><br>
+      <label for="miejsce1">Kino<br><img src="A1.jpg" alt="Miejsce 1"></label>
+    </div>
+    <div>
+      <input type="checkbox" id="A2" name="miejsca" value="A2"><br>
+      <label for="miejsce2">Kręgle<br><img src="A2.jpg" alt="Miejsce 2"></label>
+    </div>
+    <div>
+      <input type="checkbox" id="A3" name="miejsca" value="A3"><br>
+      <label for="miejsce1">Bilard<br><img src="A3.jpg" alt="Miejsce 3"></label>
+    </div>
+    <div>
+      <input type="checkbox" id="A4" name="miejsca" value="A4"><br>
+      <label for="miejsce2">Ścianka wspinaczkowa<br><img src="A4.jpg" alt="Miejsce 4"></label>
+    </div>
+    <div>
+      <input type="checkbox" id="A5" name="miejsca" value="A5"><br>
+      <label for="miejsce2">Escaperoom<br><img src="A5.jpg" alt="Miejsce 5"></label>
+    </div>
+  </form>
+
+
+<button class="przyciskcenter" onclick="zapiszOdpowiedzi()">Zatwierdź wybór</button>
+<p id="poprzedniKod"></p>
+
+<script>
+window.onload = function() {
+  const poprzedniKod = localStorage.getItem('wyborKodu'); // Odczytanie kodu z localStorage
+
+}
+
+function zapiszOdpowiedzi() {
+  const wybraneMiejsca = document.querySelectorAll('#miejscaForm input[name="miejsca"]:checked');
+  let nowyKod = "";
+  wybraneMiejsca.forEach((miejsce) => {
+    nowyKod += miejsce.value;
+  });
+
+  const poprzedniKod = localStorage.getItem('wyborKodu');
+  const aktualizowanyKod = poprzedniKod + nowyKod; // Łączenie starego kodu z nowo wybranymi opcjami
+  localStorage.setItem('wyborKodu', aktualizowanyKod); // Aktualizacja kodu w localStorage
+  window.location.href = 'plan4.html'; // Przejście do kolejnej strony
+
+}
+</script>
+
+</body>
+</html>

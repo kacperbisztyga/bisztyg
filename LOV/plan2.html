@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Czy zostaniesz moją Walentynką?</title>
+<link rel="stylesheet" href="css.css"> <!-- Upewnij się, że ścieżka do pliku CSS jest poprawna -->
+</head>
+<body>
+
+<h1>Gdzie chciałbyś pójść?</h1>
+<form id="miejscaForm">
+  <div>
+    <input type="checkbox" id="miejsce1" name="miejsca" value="R1"><br>
+    <label for="miejsce1">Makaron<br><img src="miejsce1.jpg" alt="Miejsce 1"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce2" name="miejsca" value="R2"><br>
+    <label for="miejsce2">Azjatyckie<br><img src="miejsce2.jpg" alt="Miejsce 2"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce3" name="miejsca" value="R3"><br>
+    <label for="miejsce1">Pierogi<br><img src="miejsce3.jpg" alt="Miejsce 3"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce4" name="miejsca" value="R4"><br>
+    <label for="miejsce2">Pizza<br><img src="miejsce4.jpg" alt="Miejsce 4"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce5" name="miejsca" value="R5"><br>
+    <label for="miejsce2">Meksykańskie<br><img src="miejsce5.jpg" alt="Miejsce 5"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce6" name="miejsca" value="R6"><br>
+    <label for="miejsce2">Lody (sorbetowe)<br><img src="miejsce6.jpg" alt="Miejsce 6"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce7" name="miejsca" value="R7"><br>
+    <label for="miejsce7">FastFood<br><img src="miejsce7.jpg" alt="Miejsce 7"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce8" name="miejsca" value="R8"><br>
+    <label for="miejsce7">Kebab<br><img src="miejsce8.jpg" alt="Miejsce 8"></label>
+  </div>
+  <div>
+    <input type="checkbox" id="miejsce9" name="miejsca" value="R9"><br>
+    <label for="miejsce7">Inne<br><img src="miejsce9.jpg" alt="Miejsce 9"></label>
+  </div>
+</form>
+
+<button class="przycikjedzenie" onclick="zapiszWyborIMoveOn()">Zatwierdź wybór</button>
+<p id="wybranyKod"></p>
+
+<script>
+function generujKod() {
+  const wybraneMiejsca = document.querySelectorAll('#miejscaForm input[name="miejsca"]:checked');
+  let kod = "";
+  wybraneMiejsca.forEach((miejsce) => {
+    kod += miejsce.value;
+  });
+  document.getElementById("wybranyKod").innerText = "Twój kod wyboru: " + kod;
+}
+
+let liczbaSerc = 0;
+const maxLiczbaSerc = 20; // Maksymalna liczba serc
+
+function losujLiczbe(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function stworzSerce() {
+  if (liczbaSerc >= maxLiczbaSerc) {
+    return; // Przestaje tworzyć więcej serc, jeśli osiągnięto limit
+  }
+
+  const serce = document.createElement('div');
+  serce.classList.add('serce');
+  serce.style.left = losujLiczbe(0, window.innerWidth) + 'px';
+  serce.style.top = window.innerHeight + 'px';
+  document.body.appendChild(serce);
+  liczbaSerc++; // Zwiększa licznik serc
+
+  // Animacja
+  let czas = losujLiczbe(3000, 5000); // Czas spadania
+  let start = null;
+  function animacja(timestamp) {
+    if (!start) start = timestamp;
+    let progress = timestamp - start;
+    serce.style.top = parseInt(serce.style.top) - (progress / czas) * 30 + 'px'; // Zmiana pozycji
+    if (progress < czas) {
+      requestAnimationFrame(animacja);
+    } else {
+      serce.remove();
+      liczbaSerc--; // Zmniejsza licznik serc po usunięciu serca
+    }
+  }
+  requestAnimationFrame(animacja);
+}
+
+// Tworzenie serc w interwałach
+setInterval(stworzSerce, 10); // Zwiększono interwał, aby uniknąć zbyt szybkiego osiągnięcia limitu
+
+function przekierowanieZaplanujmy() {
+  window.location.href = 'plan2.html'; // Zmienia aktualny adres URL na 'yes.html'
+}
+
+function zapiszWyborIMoveOn() {
+  const wybraneMiejsca = document.querySelectorAll('#miejscaForm input[name="miejsca"]:checked');
+  let kod = "";
+  wybraneMiejsca.forEach((miejsce) => {
+    kod += miejsce.value;
+  });
+  localStorage.setItem('wyborKodu', kod); // Zapisanie kodu do localStorage
+  window.location.href = 'plan3.html'; // Przejście do kolejnej strony
+}
+</script>
+
+</body>
+</html>
